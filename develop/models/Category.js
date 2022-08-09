@@ -1,4 +1,4 @@
-const { Model, Datatypes} = require('sequelize');
+const { Model, DataTypes} = require('sequelize');
 
 const sequelize = require('../config/connection.js');
 
@@ -7,7 +7,7 @@ Category.init(
     {
         // define colums
         id: {
-            type: Datatypes.INTEGER,
+            type: DataTypes.INTEGER,
             allowNull:false,
             primaryKey: true,
             autoIncrement: true
